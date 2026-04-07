@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: blueviolet;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  background-color: rgba(255, 0, 255, 0.279);
+  padding: 10px;
+}
+
+section {
+  padding: 22px;
+}
+
+strong {
+  color: fuchsia;
+}
+
+span {
+  color: red;
+}
+
+.highlight {
+  color: rgb(160, 3, 3);
+}
+
+/* Pseudo-classes — correct order! */
+.catch:link {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+.catch:visited {
+  color: black;
+}
+
+.catch:hover {
+  background-color: blue;
+  color: white;
+}
+
+.catch:active {
+  color: orange;
+}
+
+footer {
+  background-color: cadetblue;
+  color: white;
+  padding: 10px;
+}
