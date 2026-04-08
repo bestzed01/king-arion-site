@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mood Playlist</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Signup</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <form method="post">
+    <fieldset>
+      <legend>Create Account</legend>
 
-<h1>Welcome</h1>
+      <ol>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+        </li>
+        <li>
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email">
+        </li>
+        <li>
+          <label for="pass">Password:</label>
+          <input type="password" name="pass" id="pass">
+        </li>
+      </ol>
 
-<p>How are you feeling?</p>
+      <label>Male <input type="radio" name="gender" value="M"></label>
+      <label>Female <input type="radio" name="gender" value="F"></label>
 
-<input id="answer" placeholder="Type your mood here">
+      <ul>
+        <li><label>Games <input type="checkbox" name="hobby" value="Games"></label></li>
+        <li><label>Coding <input type="checkbox" name="hobby" value="Coding"></label></li>
+        <li><label>Movies <input type="checkbox" name="hobby" value="Movies"></label></li>
+        <li><label>Sports <input type="checkbox" name="hobby" value="Sports"></label></li>
+      </ul>
 
-<br><br>
-
-<button id="generate">Generate Playlist</button>
-
-<div id="results"></div>
-<div> 
-<p id="results">Here is personal playlist for you:</p>
-
-
-
-</div>
-
-<script src="script.js"></script>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
 </body>
 </html>
